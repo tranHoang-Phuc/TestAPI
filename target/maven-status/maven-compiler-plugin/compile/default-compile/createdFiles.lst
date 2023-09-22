@@ -1,0 +1,4 @@
+com\thphuc\store\resource\v1\BookResource.class
+com\thphuc\store\resource\v2\BookResource.class
+com\thphuc\store\dto\Book.class
+com\thphuc\store\config\BookApplication.class
