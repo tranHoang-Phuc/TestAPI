@@ -41,6 +41,11 @@ public class BookResource {
     @Path("{masach}") // url sẽ nhận mã sách là các giá trị thay đổi
     @Produces(MediaType.APPLICATION_JSON)
     public Book getOne(@PathParam("masach") String isbn) {
-        
+        for (Book book : list) {
+            if (book.getIsbn().equalsIgnoreCase(isbn)) {
+                return book;
+            }
+        }
+        return null;
     }
 }
